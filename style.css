@@ -1,0 +1,444 @@
+/* global.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+  }
+
+  .navBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 40px;
+    position: static;
+}
+
+  .navBar ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navBar ul li{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 13px;
+  }
+
+  .navBar ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-right: rgba(0, 0, 10) solid ;
+}
+
+.navBar ul li a:hover{
+    color: #ff9800;
+}
+
+  .hero {
+    position: relative;
+    width: 100%;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 10, 0.8); /* Adjust the opacity as needed */
+    z-index: 1;
+  }
+
+  .introduction {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 100;
+  }
+
+  .introduction h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    border: 2px solid #fff000; /* Add a border */
+    padding: 10px 20px; /* Add padding */
+    box-shadow: 0 0 10px rgba(255, 240, 0, 0.5); /* Add a shadow */
+    background: linear-gradient(to right, #fff000, #ff9800); /* Add a color gradient */
+    -webkit-background-clip: text; /* Clip the gradient to text */
+    -webkit-text-fill-color: transparent; /* Make the text transparent */
+     animation: gradientAnimation 4s ease-in-out infinite alternate; /* Add animation */
+  }
+  
+  .introduction p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00ffff;
+    text-shadow: 2px 2px 4px rgba(0, 255, 255, 0.3); /* Add a text shadow */
+    animation: shadowAnimation 2s ease-in-out infinite alternate; /* Add animation */
+  }
+
+  .skills {
+    text-align: center;
+    
+  }
+  
+  .skills h1 {
+    margin-bottom: 10px;
+  }
+  
+  .skill-card {
+    display: grid;
+    justify-content: flex-start;
+    grid-template-columns: repeat(8, 1fr);
+    overflow-x: scroll;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    scrollbar-width: thin;
+    gap: 15px;  
+    background-color: whitesmoke;
+  } 
+
+  
+  
+  .skill {
+    flex: 1 2 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    width: 300px;
+    height: 90%;
+  }
+  
+  .skill h2 {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .skill img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain; 
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .skill p {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+    overflow: hidden;
+  }    
+
+
+   .experiences-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    margin-top: 5px;
+  }
+
+  .experiences h1 {
+  text-align: center;
+}
+
+  .experience {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* background-color: #fff; */
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background: linear-gradient( to right, rgba(0, 0, 10, 0.8), #ff9800)
+  }
+
+  .education {
+    display: flex; 
+    flex-wrap: nowrap; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 10px; 
+    background-color: rgba(0, 0, 10, 0.8);
+  }
+
+  .education h1 {
+    text-align: center;
+    background-image:url("https://pixnio.com/free-images/objects/books/reading-open-book.jpg");
+    background-size: cover;
+    height: 100%;
+    margin: 10px;
+    padding: 60px;
+    border-radius: 5px;
+    background-position: center;
+    color: white;
+    text-align: center;
+  }
+  
+   .schools {
+    background-color: #fff;
+    display: flex;
+    /* border-radius: 8px; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); */
+    margin-left: 2px;
+    padding: 25px;
+    justify-content: center;
+    width: auto;
+    height: fit-content
+  } 
+
+  .school {
+    border-right: #ff9800 0.9px solid;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .about {
+    display: flex;
+    /* flex-direction:column; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .about-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-right: 20px ;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+  }
+  
+   .about-left {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .about-right {
+    margin-left: 40%;
+    font-size: 15px;
+  } 
+  
+  .about h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-right: 20%;
+    margin-left: 10%;
+    color: #ff9800;
+  }
+  
+  .about h3,
+  .about p,
+  .about h4 {
+    text-align: center;
+  }
+
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+  
+  @keyframes shadowAnimation {
+    0% { text-shadow: 2px 2px 4px rgba(0, 255, 255, 0.3); }
+    100% { text-shadow: -2px -2px 4px rgba(0, 255, 255, 0.3); }
+  }
+
+  @media (max-width: 768px) {
+    .skill-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .experiences-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .experience {
+      margin-top: 0.2px;
+      padding: 10px;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+
+    .education {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .schools {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      padding: 50px;
+    }
+
+    .school {
+      margin: 2px;
+      border-bottom: #ff9800 0.9px solid;
+      border-right: none;
+    }
+    .introduction {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      z-index: 100;
+    }
+    
+    .introduction h1 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 11px;
+      border: 1px solid #fff000; /* Add a border */
+      padding: 3px 6px; /* Add padding */
+      box-shadow: 0 0 4px rgba(255, 240, 0, 0.5); /* Add a shadow */
+      background: linear-gradient(to right, #fff000, #ff9800); /* Add a color gradient */
+      -webkit-background-clip: text; /* Clip the gradient to text */
+      -webkit-text-fill-color: transparent; /* Make the text transparent */
+       animation: gradientAnimation 4s ease-in-out infinite alternate; /* Add animation */
+    }
+    
+    .introduction p {
+      font-size: 12px;
+      font-weight: bold;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 255, 255, 0.3); /* Add a text shadow */
+      animation: shadowAnimation 2s ease-in-out infinite alternate; /* Add animation */
+    }
+    
+}
+
+@media (max-width: 950px) {
+  .skill-card {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 7px;
+  }
+
+  .skill {
+    flex: 1 2 200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    margin: 10px 10px;
+    width: 250px;
+    height: 90%;
+  }
+
+  .experiences-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience {
+    margin-top: 0.2px;
+    padding: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .about-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 10px;
+    margin-top: 5px;
+    margin-right: 20px ;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+.about-right {
+  font-size: 12px;
+  margin-right: 30%;
+
+} 
+
+.navBar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: 50px;
+  position: static;
+}
+
+.navBar ul li{
+  display: inline-block;
+  margin-right: 2px;
+  font-size: 10px;
+}
+
+.navBar ul li a{
+  color: #666;
+  text-decoration: none;
+  padding: 3px 5px;
+  border: none;
+  
+}
+
+.introduction {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 100;
+}
+
+.introduction h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 11px;
+  border: 1px solid #fff000; /* Add a border */
+  padding: 6px 12px; /* Add padding */
+  box-shadow: 0 0 7px rgba(255, 240, 0, 0.5); /* Add a shadow */
+  background: linear-gradient(to right, #fff000, #ff9800); /* Add a color gradient */
+  -webkit-background-clip: text; /* Clip the gradient to text */
+  -webkit-text-fill-color: transparent; /* Make the text transparent */
+   animation: gradientAnimation 4s ease-in-out infinite alternate; /* Add animation */
+}
+
+.introduction p {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 255, 255, 0.3); /* Add a text shadow */
+  animation: shadowAnimation 2s ease-in-out infinite alternate; /* Add animation */
+}
+}
