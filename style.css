@@ -13,7 +13,7 @@ body {
     align-items: center;
     background: white;
     height: 40px;
-    position: static;
+    position: fixed;
 }
 
   .navBar ul{
@@ -40,6 +40,7 @@ body {
 
 .navBar ul li a:hover{
     color: #ff9800;
+    cursor: pointer;
 }
 
   .hero {
@@ -110,7 +111,7 @@ body {
     overflow-x: scroll;
     padding-bottom: 5px;
     padding-top: 5px;
-    scrollbar-width: thin;
+    scrollbar-width: none;
     gap: 15px;  
     background-color: whitesmoke;
   } 
@@ -267,7 +268,7 @@ body {
     100% { text-shadow: -2px -2px 4px rgba(0, 255, 255, 0.3); }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 740px) {
     .skill-card {
       display: flex;
       flex-direction: column;
@@ -298,6 +299,7 @@ body {
       flex-direction: column;
       margin-bottom: 10px;
       padding: 50px;
+      font-size: 14px;
     }
 
     .school {
@@ -367,6 +369,7 @@ body {
     padding: 10px;
     margin-right: 20px;
     margin-left: 20px;
+    font-size: 14px;
   }
 
   .about-wrap {
