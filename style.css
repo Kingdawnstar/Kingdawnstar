@@ -9,11 +9,13 @@ body {
 
   .navBar{
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
     background: white;
     height: 40px;
     position: fixed;
+    z-index: 100;
 }
 
   .navBar ul{
